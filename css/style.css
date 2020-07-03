@@ -226,13 +226,13 @@ body {
 }
 
 .featured-item-wrap:hover{
-  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
 }
 
 .featured-item-wrap:hover .featured-cart{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .featured-cart {
