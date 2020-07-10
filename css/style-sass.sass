@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900')
+
+body
+    margin: 0
+    font-family: 'Lato', sans-serif
+    background-color: #ffffff
+
+.container
+    width: 1140px
+    margin: 0 auto
+
+.header
+    height: 100px
+    border-bottom: 1px solid #ececec
+
+.header-inside
+    height: inherit
+    display: flex
+    flex-direction: row
+    align-items: center
+
+.logo
+    width: 165px
+    line-height: 51px
+    background: url(../img/logo.png) no-repeat
+    font-size: 27px
+    font-weight: 400
+    padding-left: 72px
+    span
+        color: #f16d7f
+        font-weight: 400
+
+.search-wrap
+    display: flex
+    align-items: center
+    height: 40px
+    border: 1px solid #e6e6e6
+    border-radius: 3px
+    overflow: hidden
+    input
+        height: inherit
+        padding: 0 3px 0 16px
+        border: none
+        outline: none
+    button
+        height: inherit
+        padding: 0 8px
+        border: 0
+        background: none
+        border-left: 1px solid #e6e6e6
+
+.search-browse
+    height: inherit
+    padding: 12px
+    font-size: 14px
+    color: #222222
+    background-color: #f9f9f9
+    box-sizing: border-box
+    border-right: 1px solid #e6e6e6
+
+.header-cart
+    margin-left: auto
+    margin-right: 25px
+
+.account-btn
+    padding: 15px
+    background-color: #f16d7f
+    color: white
+    border: none
+
+
+.top-nav
+    height: 50px
+    display: flex
+    justify-content: center
+    align-items: center
+    a
+        text-decoration: none
+        font-weight: 700
+        text-transform: uppercase
+        font-size: 14px
+        color: #222222
+    a:not(:last-child)
+        margin-right: 45px
+    a:hover
+        color: #f16d7f
+
+.newarrivals-head
+    width: 100%
+    height: 148px
+    background-color: #f8f3f4
+
+.newarrivals-header
+    display: flex
+    height: inherit
+    align-items: center
+    flex-direction: row
+    flex-wrap: nowrap
+    justify-content: space-between
+
+
+.newarrivals-header-title
+    font-family: "Lato", sans-serif
+    font-size: 24px
+    line-height: 20px
+    font-weight: 900
+    text-transform: uppercase
+    color: #f16d7f
+
+
+.newarrivals-header-breadcrumb
+    display: flex
+    list-style: none
+    margin: 0
+    padding: 0
+
+
+.newarrivals-header-breadcrumb-list
+    font-family: "Lato", sans-serif
+    font-size: 14px
+    line-height: 20px
+    font-weight: 700
+    text-transform: uppercase
+    color: #636363
+
+
+.newarrivals-header-breadcrumb-list+.newarrivals-header-breadcrumb-list::before
+    content: '/'
+    padding: 0 7px
+
+
+.newarrivals-header-breadcrumb-list:last-child
+    color: #f16d7f
+
+
+.crumblinks
+    text-decoration: none
+    color: inherit
+
+.singlepage-foto
+    background-color: #f7f7f7
+    height: 777px
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.singlepage-banner-arrow
+    width: 47px
+    height: 47px
+    background-color: rgba(42,42,42,0.14)
+    display: flex
+    align-items: center
+    justify-content: center
+    i
+        color: #ffffff
+        font-size: 24px
+    &:hover
+        cursor: pointer
+
+.singlepage-banner
+    display: flex
+    align-items: center
+    justify-content: center
+    img
+        width: 597px
+        height: 724px
+        margin-top: 11px
+
+.singlepage-bill
+    display: flex
+    background-color: transparent
+    justify-content: center
+    align-items: center
+
+.singlepage-bill-wrap
+    margin-top: -97px
+    display: flex
+    flex-direction: column
+    align-items: center
+    background-color: #fff
+
+.singlepage-bill-collection
+    font-family: "Lato", sans-serif
+    font-size: 14px
+    font-weight: 700
+    color: #f16d7f
+    margin: 73px 0 15px 0
+
+.singlepage-bill-slide
+    width: 147px
+    height: 1px
+    background-color: #ef5b70
+    border: 1px solid #eaeaea
+    display: flex
+    justify-content: center
+    align-items: center
+    .singlepage-bill-slide-slider
+        width: 63px
+        height: 3px
+        background-color: #ef5b70
+
+.singlepage-bill-prodtitle
+    font-family: "Lato", sans-serif
+    font-size: 18px
+    line-height: 24px
+    font-weight: 900
+    text-transform: uppercase
+    color: #4d4d4d
+    margin-top: 18px
+
+.singlepage-bill-text1
+    font-family: "Lato", sans-serif
+    font-size: 13px
+    line-height: 24px
+    font-weight: 700
+    color: #5e5e5e
+    width: 618px
+    margin: 67px 0 28px 0
+    text-align: center
+
+.singlepage-bill-properties
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+    width: 334px
+    span
+        font-family: "Lato", sans-serif
+        font-size: 14px
+        line-height: 24px
+        font-weight: 700
+        color: #b9b9b9
+    b
+        color: #2f2f2f
+        font-weight: inherit
+
+.singlepage-bill-price
+    width: 642px
+    height: 67px
+    border-bottom: 1px solid #ef5b70
+    margin-top: 37px
+    font-family: "Lato",sans-serif
+    font-size: 24px
+    font-weight: 700
+    color: #ef5b70
+    text-align: center
+
+.singlepage-bill-options
+    margin-top: 63px
+    width: 538px
+
+.bill-options
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    .option
+        h6
+            font-family: "Lato",sans-serif
+            font-size: 14px
+            font-weight: 700
+            color: #2f2f2f
+            margin-bottom: 16px
+        .pick-btn
+            width: 144px
+            height: 35px
+            background-color: #ffffff
+            border: 1.0px solid #eaeaea
+            display: flex
+            flex-direction: row
+            align-items: center
+            justify-content: space-between
+            padding-left: 15px
+            font-family: "Lato",sans-serif
+            font-size: 13px
+            font-weight: 400
+            color: #bcbcbc
+            &:hover
+                cursor: pointer
+        .coloursample
+            width: 12px
+            height: 12px
+            background-color: #ef5b70
+        i
+            font-size: 14px
+            color: #bcbcbc
+
+.add-to-cart
+    width: 100%
+    height: 55px
+    background-color: #ffffff
+    border: 1px solid #ef5b70
+    font-family: "Lato", sans-serif
+    font-size: 16px
+    font-weight: 700
+    color: #ef5b70
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+    margin: 28px 0 122px 0
+    img
+        margin-right: 15px
+    &:hover
+        cursor: pointer
+
+.singlepage-recomend
+
+
+.singlepage-recomended
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-top: 119px 0 73px 0
+
+.singlepage-recomended-title
+    font-family: "Lato", sans-serif
+    font-size: 24px
+    font-weight: 900
+    text-transform: uppercase
+    color: #4d4d4d
+    margin-bottom: 72px
+
+.singlepage-recomended-wrap
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    width: 100%
+
+.singlepage-recomended-wrap-cell
+    width: 263px
+    height: 364px
+    background-color: #ffffff
+    text-decoration: none
+    .cell-img-wrap
+        width: 261px
+        height: 280px
+        background-color: #e9e9e9
+        text-align: center
+        overflow: hidden
+        img
+            max-height: 100%
+
+    .cell-title
+        font-family: "Lato", sans-serif
+        font-size: 14px
+        font-weight: 400
+        text-transform: uppercase
+        color: #6f6e6e
+        margin: 18px 0 17px
+    .cell-price
+        font-family: "Lato", sans-serif
+        font-size: 16px
+        font-weight: 700
+        text-transform: uppercase
+        color: #f16d7f
+
+.subscribe-wrap
+    margin-top: 100px
+    height: 438px
+    background: url(../img/rectangle_9_2194.jpg) no-repeat center bottom, #ccc
+    background-blend-mode: overlay
+    background-size: cover
+
+.subscribe
+    display: flex
+    height: inherit
+
+.reviews,.subscribe-right
+    width: calc(100% - 1px)
+
+.reviews
+    display: flex
+    align-items: center
+
+.review-unit
+    width: 500px
+    display: flex
+    justify-content: space-between
+
+.reviewUnit-left
+    width: 83px
+
+.review-unit-right
+    width: 386px
+    blockquote
+        margin: 0
+        font-size: 16px
+        font-style: italic
+        line-height: 26px
+        font-weight: 700
+
+.review-name
+    margin-top: 20px
+    font-size: 16px
+    font-weight: 700
+    color: #f16d7f
+
+.review-from
+    color: #222224
+    font-size: 12px
+    font-weight: 300
+
+.reviews-switch
+    width: 140px
+    display: flex
+    justify-content: space-between
+    margin-top: 40px
+    div
+        width: 38px
+        height: 4px
+        background-color: #d6d6d6
+    div:hover
+        background-color: #f16d7f
+        cursor: pointer
+
+.subscribe-divider
+    width: 1px
+    background-color: #ffffff
+
+.subscribe-right
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+.subscribe-right-head
+    font-size: 24px
+    text-transform: uppercase
+    color: #222224
+
+.subscribe-right-text
+    margin: 10px 0 35px
+
+.subscribe-form
+    height: 46px
+    input
+        height: inherit
+        width: 334px
+        border: none
+        outline: none
+        padding: 0 28px
+        font-weight: 700
+        background-color: #e1e1e1
+        border-top-left-radius: 23px
+        border-bottom-left-radius: 23px
+        float: left
+    button
+        background-color: #f16d7f
+        border-top-right-radius: 23px
+        border-bottom-right-radius: 23px
+        color: white
+        border: none
+        height: inherit
+        padding: 0 20px
+        outline: none
+        cursor: pointer
+
+footer
+    margin-top: 100px !important
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+
+.footer-brand
+    width: 427px
+    font-size: 14px
+    font-weight: 300
+    line-height: 24px
+    color: #898989
+
+.footer-brand-text1
+    margin: 30px 0
+
+.footer-column
+    padding-top: 15px
+    h2
+        margin: 0 0 30px
+        font-size: 18px
+        font-weight: 700
+        color: #f16d7f
+    a
+        display: block
+        color: #898989
+        font-size: 16px
+        text-decoration: none
+    a:hover
+        color: #f16d7f
+    a:not(:last-child)
+        margin-bottom: 25px
+
+.copyrights
+    height: 80px
+    background: #e6e6e6
+    margin-top: 100px
+
+.copyrights-wrap
+    color: #7a7a7a
+    height: inherit
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.copyrights-right
+    display: flex
+    width: 200px
+    justify-content: space-between
+    a
+        text-decoration: none
+        color: inherit
+    i
+        width: 32px
+        height: 32px
+        background: white
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        text-align: center
+    i:hover
+        color: white
+        background: #f16d7f
